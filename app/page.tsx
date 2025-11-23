@@ -1,10 +1,10 @@
 import React from 'react';
 
 const MaintenancePage = () => {
-  // Styles are converted to a JS object for inline application.
   const pageStyle: React.CSSProperties = {
     fontFamily: "'DM Serif Display', serif",
-    backgroundImage: "url('https://i.pinimg.com/originals/8a/9c/0b/8a9c0b7c2513f2a8f4c2eef9e5b5e7c8.jpg')",
+    // Use the local image from the public folder
+    backgroundImage: "url('/maintenance-bg.jpg')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100vh',
@@ -29,8 +29,6 @@ const MaintenancePage = () => {
     borderRadius: '5px',
   };
 
-  // The body tag needs its margin removed globally.
-  // We can inject a style tag for this specific case.
   const globalStyle = `
     body {
       margin: 0;
